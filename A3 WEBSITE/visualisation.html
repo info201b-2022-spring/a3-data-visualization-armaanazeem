@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>A3: VISUALISATION</title>
+</head>
+
+<body>
+  <header id="mainHeader">
+    <div class="container">
+      <h1 id="title"><a href="./index.html" style="text-decoration:none">INCARCERATIONS</a></h1>
+    </div>
+  </header>
+
+  <nav id="mainNav">
+    <ul>
+      <div class="navContainer">
+        <li><a href="./index.html">Overview</a></li>
+        <li><a href="./visualisation.html">Visualisation</a></li>
+        <li><a href="./geography.html">Geography</a></li>
+        <li><a href="./summary.html">Summary</a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <section id="visOverview">
+    <div class="container">
+      <p id="visIntro">The visualisations below are interactive: hover your cursor over the graphs to see more concise data. More information about the visualisations is available on the right side of the page.</p>
+    </div>
+  </section>
+
+  <section id="titles">
+    <div class="container">
+      <h2 id="visTitle">VISUALISATIONS</h2>
+    </div>
+
+    <div class="container">
+      <h2 id="infoTitle">INFORMATION</h2>
+    </div>
+
+    <!-- <div class="clearFix"></div> -->
+  </section>
+
+  <!-- <div id="visBorderRight"></div> -->
+  
+  <section id="graphs">
+
+    <div class="container" id="ca15to64">
+      <embed type="text/html" src="./htmlgraphs/ca15to64.html" width="800" height="400">
+    </div>
+    
+    <div class="container" id="me15to64">
+      <embed type="text/html" src="./htmlgraphs/me15to64.html" width="800" height="400">
+    </div>
+    
+    <div class="container" id="ak15to64">
+      <embed type="text/html" src="./htmlgraphs/ak15to64.html" width="800" height="400">
+    </div>
+    
+    <div class="container" id="capopprop">
+      <embed type="text/html" src="./htmlgraphs/capopprop.html" width="800" height="400">
+    </div>
+    
+    <div class="container" id="cajailprop">
+      <embed type="text/html" src="./htmlgraphs/cajailprop.html" width="800" height="400">
+    </div>
+    
+    <div class="container" id="mepopprop">
+      <embed type="text/html" src="./htmlgraphs/mepopprop.html" width="800" height="400">
+    </div>
+    
+    <div class="container" id="mejailprop">
+      <embed type="text/html" src="./htmlgraphs/mejailprop.html" width="800" height="400">
+    </div>
+    
+    <div class="container" id="akpopprop">
+      <embed type="text/html" src="./htmlgraphs/akpopprop.html" width="800" height="400">
+    </div>
+    
+    <div class="container" id="akjailprop">
+      <embed type="text/html" src="./htmlgraphs/akjailprop.html" width="800" height="400">
+    </div>
+
+    <div class="container" id="blankspace"></div>
+  </section>
+
+  <section id="info">
+    <div class="container">
+      <p id="ca15to64info">Line graph depicting California's general population over time (ages 15-64). <br><br>
+      
+      The timeline spans 48 years, in which the earliest records are from 1970 and the latest are from 2018.</p>
+    </div>
+
+    <div class="container">
+      <p id="me15to64info">Line graph depicting Maine's general population over time (ages 15-64). <br><br>
+      
+      The timeline spans 48 years, in which the earliest records are from 1970 and the latest are from 2018.</p>
+    </div>
+
+    <div class="container">
+      <p id="ak15to64info">Line graph depicting Alaska's general population over time (ages 15-64). <br><br>
+      
+      The timeline spans 48 years, in which the earliest records are from 1970 and the latest are from 2018.</p>
+    </div>
+
+    <div class="container">
+      <p id="capoppropinfo">Bar graph depicting California's population ethnicity proportions in respect to the total population (ages 15-64). The proportions are calculated from the total average population size throughout the 48-year span.<br><br>
+      
+      The data illustrates a majority White and Latinx proportion, with a smaller Asian-American and Black population with a small Native minority.<br><br>
+    
+      <em>Note: aapi = Asian-American/Pacific Islander</em></p>
+    </div>
+
+    <div class="container">
+      <p id="cajailpropinfo">Bar graph depicting California's jail population ethnicity proportions in respect to the total jail population. The proportions are calculated from the total average jail population size throughout the 48-year span.<br><br>
+      
+      The data illustrates a significantly larger Latinx and Black incarcerated population than the general 15-64 population.</p>
+    </div>
+
+    <div class="container">
+      <p id="mepoppropinfo">Bar graph depicting Maine's population ethnicity proportions in respect to the total population (ages 15-64). The proportions are calculated from the total average population size throughout the 48-year span.<br><br>
+      
+      The data illustrates an significant White majority, with miniscule ethnicity diversity distribution among the other ethnicities.</p>
+    </div>
+
+    <div class="container">
+      <p id="mejailpropinfo">Bar graph depicting Maine's jail population ethnicity proportions in respect to the total jail population. The proportions are calculated from the total average jail population size throughout the 48-year span.<br><br>
+      
+      Although there is still a significant White majority, there is also a noticeably higher incarcerated Black and Latinx population.<br><br>
+    
+      <em>Note: there are no recorded statistics regarding the "other" ethnicity category for Maine jail incarcerations in the parent dataset.</em></p>
+    </div>
+
+    <div class="container">
+      <p id="akpoppropinfo">Bar graph depicting Alaska's population ethnicity proportions in respect to the total population (ages 15-64). The proportions are calculated from the total average population size throughout the 48-year span.<br><br>
+      
+      The data illustrates a significant White majority, along with a larger Native population proportion in comparision to California and Maine.</p>
+    </div>
+
+    <div class="container">
+      <p id="akjailpropinfo">Bar graph depicting Alaska's jail population ethnicity proportions in respect to the total jail population. The proportions are calculated from the total average jail population size throughout the 48-year span.<br><br>
+      
+      The data depicts a White majority, with a significantly larger Native population that is almost equivalent to the White majority.<br><br>
+    
+      <em>Note: there are no recorded statistics regarding the "other" ethnicity category for Alaska jail incarcerations in the parent dataset.</em></p>
+    </div>
+
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="./js/animations.js"></script>
+
+</body>
+</html>

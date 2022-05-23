@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>A3: GEOGRAPHY</title>
+</head>
+
+<body>
+  <header id="mainHeader">
+    <div class="container">
+      <h1 id="title"><a href="./index.html" style="text-decoration:none">INCARCERATIONS</a></h1>
+    </div>
+  </header>
+
+  <nav id="mainNav">
+    <ul>
+      <div class="navContainer">
+        <li><a href="./index.html">Overview</a></li>
+        <li><a href="./visualisation.html">Visualisation</a></li>
+        <li><a href="./geography.html">Geography</a></li>
+        <li><a href="./summary.html">Summary</a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <section id="geoOverview">
+    <div class="container">
+      <p id="geoIntro">The visualisation below is interactive: hover your cursor over the graph to see more concise data.</p>
+    </div>
+  </section>
+
+  <section id="map">
+    <div class="container" id="chisqMap">
+      <embed type="text/html" src="./htmlgraphs/statechisq.html" width="900" height="500">
+    </div>
+  </section>
+
+  <div id="geoBorderRight"></div>
+
+  <section id="text">
+    <div class="container">
+      <p id="geoDescription">The graph to the right illustrates the chi-squared value of incarcerated ethnnicity groups among the United States.<br><br>
+      
+      The chi-squared test depicted in this graph takes each incarcerated ethnicity group (Asian-American/Pacific Islander, Black, Latinx, White, and Other) and their respective proportion to the total incarcerated population of each state, and calculates a chi-squared value for each set of proportions. The lower the chi-squared value, the more "uniform" and evenly represented the different incarcerated ethnicity groups are for each state.<br><br>
+    
+      Some bias present within this visualisation is that Alaska and Hawaii are omitted. Although Alaska is an integral factor within the scope of this study, the R package utilised to confiure the geographical map did not harbour data for Alaska to be represented. Furthermore, the states of Connecticut, Deleware, Rhode Island, and Vermont are excluded (see the <a href="./summary.html">Summary</a> page for more information).</p>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="./js/animations.js"></script>
+  
+</body>
+</html>

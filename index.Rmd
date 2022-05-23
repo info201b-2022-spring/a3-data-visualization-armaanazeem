@@ -1,0 +1,76 @@
+---
+author: "Armaan Azeem"
+date: '2022-05-11'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+*Note: Website view is currently best supported on Google Chrome Desktop.*
+
+## A3: Data Visualisation Report
+
+### [**Introduction**]{.underline}
+
+Racism is an ongoing problem in our world, and one of the most prominent instances of this issue is the United States prison and incarceration system. Complex sociopolitical structures -- such as the war on drugs and over-policing of people of colour -- have resulted in the disproportionate incarceration of coloured individuals.
+
+In this report, the incarceration trends between cardinal and remote regions will be analysed and compared. The remote region of interest is Alaska: Alaska's incarceration trends may likely vary from the rest of the country due to being so geographically separated from the contiguous United States along with harbouring a more various dispersion of ethnicities - this may lead to different sociopolitical issues and disparities.
+
+The Alaskan trends (ethnic dispersion among the whole population, ethic dispersion into jail) will be compared to the states with the smallest (1) and largest (2) standard deviation in terms of ethic group proportions to the general population (ages 15-64). These states will be regarded as the Cardinal Regions of Interest (CRI). To further bolster the implications of the standard deviations, the trends among the CRI's general populations (ages 15-64) and incarcerated populations will also undergo a chi-square test to determine which of the two states have the most respectively accurate and erroneous distributions in comparison to a uniform distribution.
+
+### [**Variables of Interest**]{.underline}
+
+-   Cardinal Regions of Interest: general population (ages 15-64) standard deviations
+
+-   Cardinal Regions of Interest: incarcerated population standard deviations
+
+-   Cardinal Regions of Interest: general population (ages 15-64) chi-square test values
+
+-   Cardinal Regions of Interest: incarcerated population chi-square test values
+
+-   Alaskan general population (ages 15-64) standard deviation
+
+-   Alaskan incarcerated population chi-square test value
+
+#### [**A paragraph of summary information, citing at least 5 values calculated from the data**]{.underline}
+
+-   CRI (smallest 15-64 population SD) = California, 0.115
+
+-   CRI (largest 15-64 population SD) = Maine, 0.253
+
+-   Alaskan 15-64 population SD = 0.171
+
+-   California jail pop. SD = 0.122
+
+-   Maine jail pop. SD = 0.237
+
+-   Alaskan jail pop. SD = 0.198
+
+-   CRI (lowest 15-64 chi-sq.) = California, 21.141
+
+-   CRI (highest 15-64 chi-sq.) = Maine, 105.743
+
+-   California jail pop. chi-sq. = 30.982
+
+-   Maine jail pop. chi-sq. = 125.391
+
+-   Alaskan 15-64 chi-sq. = 48.486
+
+-   Alaskan jail pop. chi-sq = 47.246
+
+\* No jail ethnicity population data for CT, DE, HI, RI, or VT
+
+#### [**A chart that shows trends over time for a variable of your choice**]{.underline}
+
+-   CRI and Alaskan total populations (15-64), respective (per year)
+
+#### [**A chart that compares two variables to one another**]{.underline} 
+
+-   Pie charts of CRI and Alaskan 15-64 populations by ethnicity
+-   Pie charts of CRI and Alaskan incarcerated populations by ethnicity
+
+#### [**A map that shows how your measure of interest varies geographically**]{.underline}
+
+-   Geographical map of each state's jail population chi-square value among it's incarcerated ethnicity groups

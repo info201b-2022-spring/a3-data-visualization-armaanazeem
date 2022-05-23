@@ -1,0 +1,53 @@
+# A3 Scratch Code
+
+# # Subset 'incarcerations' to retrieve data that pertains only to Alaska
+# 
+# alaska_incarcerations <- incarcerations %>%
+#   filter(state == "AK")
+# 
+# # Jail information was only collected for a few select counties in Alaska.
+# # Subsetting the dataframe to only include counties with incarceration info
+# # ('alaska_refined')
+# 
+# alaska_refined <- alaska_incarcerations %>%
+#   filter(
+#     str_detect(
+#       county_name,
+#       "Kenai|Juneau|Bristol|Sitka|Lake and Peninsula|Petersburg|Haines|Bethel|Aleutians East|Matanuska|Nome|Dillingham",
+#     )
+#   )
+# 
+# # Further refining the 'alaska_refined' dataframe to compile data to the 
+# # state level
+# 
+# alaska_refined <- alaska_refined %>%
+#   group_by(year, state) %>%
+#   arrange(desc(year)) %>%
+#   summarise(
+#     total_pop = sum(total_pop),
+#     total_pop_15to64 = sum(total_pop_15to64),
+#     aapi_pop_15to64 = sum(aapi_pop_15to64),
+#     black_pop_15to64 = sum(black_pop_15to64),
+#     latinx_pop_15to64 = sum(latinx_pop_15to64),
+#     native_pop_15to64 = sum(native_pop_15to64),
+#     white_pop_15to64 = sum(white_pop_15to64),
+#     total_jail_pop = sum(total_jail_pop),
+#     aapi_jail_pop = sum(aapi_jail_pop),
+#     black_jail_pop = sum(black_jail_pop),
+#     latinx_jail_pop = sum(latinx_jail_pop),
+#     native_jail_pop = sum(native_jail_pop),
+#     white_jail_pop = sum(white_jail_pop),
+#     other_race_jail_pop = sum(other_race_jail_pop), 
+#     .groups = "drop"
+#   )
+# 
+# alaska_refined <- alaska_refined %>%
+#   mutate(
+#     aapi_pop_prop = aapi_pop_15to64 / total_pop_15to64,
+#     black_pop_prop = black_pop_15to64 / total_pop_15to64,
+#     latinx_pop_prop = latinx_pop_15to64 / total_pop_15to64,
+#     native_pop_prop = native_pop_15to64 / total_pop_15to64,
+#     white_pop_prop = white_pop_15to64 / total_pop_15to64,
+#   )
+# 
+# alaska_refined <- as.data.frame(alaska_refined)

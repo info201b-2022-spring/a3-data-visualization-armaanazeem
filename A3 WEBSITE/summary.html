@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>A3: SUMMARY</title>
+</head>
+
+<body>
+  <header id="mainHeader">
+    <div class="container">
+      <h1 id="title"><a href="./index.html" style="text-decoration:none">INCARCERATIONS</a></h1>
+    </div>
+  </header>
+
+  <nav id="mainNav">
+    <ul>
+      <div class="navContainer">
+        <li><a href="./index.html">Overview</a></li>
+        <li><a href="./visualisation.html">Visualisation</a></li>
+        <li><a href="./geography.html">Geography</a></li>
+        <li><a href="./summary.html">Summary</a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <section id="intro">
+    <div class="container">
+      <h1 id="introHeader">SUMMARY</h1>
+        <p id="summaryDescription">
+          
+          In this report, the population and incarceration trends between Alaska and the Cardinal Regions of Interest were explored. <br><br>
+        
+          The Cardinal Region(s) of Interest (CRI) was found by compiling the data for each state's avergage population over the data's 48-year span, finding the respective proportions of each ethnicity group within each state (Asian-American/Pacific Islander, Black, Latinx, Native, and White), and focusing on the states with the largest and smallest respective standard deviations of each population ethnicity group.
+        
+          The state with the largest standard deviation among it's ethnicity groups was found to be Maine, and the state with the smallest standard deviation was California. These states were regarded as the CRIs, in which their trends were compared to those of Alaska.<br><br>
+        
+          Maine's average SD was found to be 0.253 (jail population SD = 0.237); California's SD was 0.115 (jail population SD = 0.122) and Alaska's average standard deviation was found to be 0.171 (jail population SD = 0.198). As the standard deviation only tells how close to the mean the data is, further calculations were carried out to determine each set of data's uniformity via a chi-squared test.<br><br>
+        
+          In a chi-squared test, a lower value indicates that the data is more evenly (uniformly) distributed. In this circumstance, a lower chi-squared value indicates a more evenly distributed population in regards to the separate ethnicity population proportions. Maine's average population chi-squared value (CSV) was 105.743 (jail population CSV = 125.391), California's average population CSV was 21.141 (jail population CSV = 30.982) and Alaska's average population CSV was 48.486 (jail population CSV = 47.246).<br><br>
+        
+          Overall, Maine's ethnicity distibutions appear to be predominantly white, whereas California harbours a larger coloured population. Alaska, while also predominantly white, has a larger native representation, allowing its CSV to be between the CRI's respective values and closer to a more uniform distribution. In regards to their jail CSVs, each CRI and Alaska appear to have somewhat proprtional jail CSVs to their average populations, however California and Maine show a higher CSV for their jail populations than their average populations. This indicates that their jail populations are more unevenly distributed, which could touch on factors of racially motivated discriminatory incarceration. Alaska, however, has a lower CSV than it's avergae population.</p>
+      </div>
+
+    <div class="container">
+      <p id="bias">Many sources of bias and inaccuracy have been discovered throughout this study. The parent dataset contains an abundance of missing values in regards to state populations and incarceration data. Specifically, despite the data being refined down to the county-level, there is no data for incarcerated ethnicity populations in the states of Connecticut, Deleware, Hawaii, Rhode Island, or Vermont. Although these states are out of the scope for this research topic, these states had to be omitted due to their missing values preventing a chi-squared test from being exexuted.<br><br>
+      
+      Furthermore, geographical map fails to represent Alaska. This is because the R package utilised to configure the geographical visualisation only includes the contiguous 48 states, and does not include Alaska or Hawaii. Thus, despite being an integral part of this study, Alaska's chi-squared value has been omitted in the geographical representation.
+    
+      <br><br><br>
+      R packages used:<br>
+      - stringr<br>
+      - DPLYR<br>
+      - ggplot2<br>
+      - maps<br>
+      - plotly<br>
+      - htmlwidgets
+    
+      <br><br><br>
+      Developed by Armaan Azeem<br>
+      INFO 201 B</p>
+    </div>
+  </section>
+
+  <div id="introBorderRight"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="./js/animations.js"></script>
+
+</body>
+</html>
